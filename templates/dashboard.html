@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prediction Dashboard</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff9900;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stock-card h2 {
+            color: #ff9900;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .stock-card p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .stock-card .chart {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Prediction Dashboard</h1>
+
+    <div class="stock-card">
+        <h2>Stock 1</h2>
+        <p>Stock description and information.</p>
+        <div id="chart1" class="chart"></div>
+    </div>
+
+    <div class="stock-card">
+        <h2>Stock 2</h2>
+        <p>Stock description and information.</p>
+        <div id="chart2" class="chart"></div>
+    </div>
+
+    <div class="stock-card">
+        <h2>Stock 3</h2>
+        <p>Stock description and information.</p>
+        <div id="chart3" class="chart"></div>
+    </div>
+
+    <!-- Add more stock cards as needed -->
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        // JavaScript code for plotting charts
+        // Replace the placeholder chart IDs and data with actual data
+
+        // Chart 1
+        var chart1Data = {
+            // Add chart data here
+        };
+
+        var chart1Layout = {
+            // Add chart layout options here
+        };
+
+        Plotly.newPlot('chart1', chart1Data, chart1Layout);
+
+        // Chart 2
+        var chart2Data = {
+            // Add chart data here
+        };
+
+        var chart2Layout = {
+            // Add chart layout options here
+        };
+
+        Plotly.newPlot('chart2', chart2Data, chart2Layout);
+
+        // Chart 3
+        var chart3Data = {
+            // Add chart data here
+        };
+
+        var chart3Layout = {
+            // Add chart layout options here
+        };
+
+        Plotly.newPlot('chart3', chart3Data, chart3Layout);
+
+        // Add more chart plotting code as needed
+    </script>
+</body>
+</html>
